@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noozdaaaa.github.io/mon-blog-outillage/sitemap.xml
