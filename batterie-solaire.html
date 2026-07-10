@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Batterie solaire nomade pour camping-car & mobil-home — Guide d'achat</title>
+<meta name="google-site-verification" content="-SPvopWNBrpuA1vc6pgbIIwg4gJiJz-C9EXCBXI7-yI" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#15232A;
+    --paper:#FAF7F1;
+    --sun:#C97D1E;
+    --sun-bg:#E8A23D;
+    --solar:#1F6F5C;
+    --rust:#8B3220;
+    --line:#b8ae9a;
+    --muted:#4A4640;
+  }
+  html{color-scheme:light only;}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper) !important;
+    color:var(--night) !important;
+    font-family:'Source Serif 4', serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px 80px;}
+
+  /* ---- HEADER ---- */
+  header.hero{
+    background:var(--night) !important;
+    color:var(--paper) !important;
+    padding:56px 24px 40px;
+    position:relative;
+    border-bottom:6px solid var(--sun-bg);
+    overflow:hidden;
+  }
+  .hero-inner{max-width:760px;margin:0 auto;position:relative;}
+  .sun-ray{
+    position:absolute;
+    top:-60px;right:-60px;
+    width:220px;height:220px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(232,162,61,.35) 0%, transparent 70%);
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--sun-bg);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--sun-bg);display:inline-block;}
+  h1{
+    font-family:'Oswald', sans-serif;
+    font-weight:700;
+    font-size:clamp(32px,7vw,50px);
+    line-height:1.06;
+    margin:0 0 18px;
+    text-transform:uppercase;
+    letter-spacing:.01em;
+  }
+  .hero p.lede{
+    font-size:17px;
+    max-width:56ch;
+    color:#D8D2C6;
+    margin:0;
+  }
+
+  /* ---- SECTION TITLES ---- */
+  h2{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-size:22px;
+    letter-spacing:.03em;
+    margin:52px 0 6px;
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+  }
+  h2 .tag{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    font-weight:700;
+    color:var(--solar);
+    letter-spacing:.05em;
+  }
+  h2::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 10px);
+    margin-left:8px;
+  }
+  p{margin:14px 0;}
+  ul{margin:14px 0;padding-left:0;list-style:none;}
+  ul li{
+    padding-left:22px;
+    position:relative;
+    margin-bottom:10px;
+  }
+  ul li::before{
+    content:"☀";
+    position:absolute;
+    left:0;
+    color:var(--rust);
+    font-size:13px;
+  }
+  strong{color:var(--rust);}
+
+  /* ---- SPEC / PRODUCT CARDS ---- */
+  .spec-card{
+    border:1px solid var(--night);
+    background:#FBF9F4 !important;
+    margin:28px 0;
+    position:relative;
+  }
+  .spec-card::before,.spec-card::after{
+    content:"";
+    position:absolute;
+    width:10px;height:10px;
+    border-color:var(--solar);
+    border-style:solid;
+  }
+  .spec-card::before{top:-1px;left:-1px;border-width:2px 0 0 2px;}
+  .spec-card::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0;}
+
+  .spec-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 18px;
+    background:var(--night) !important;
+    color:var(--paper) !important;
+  }
+  .spec-head .model{
+    font-family:'Oswald', sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:.02em;
+  }
+  .spec-head .tier{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--sun-bg);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .spec-body{padding:18px 18px 8px;}
+  .spec-row{
+    display:flex;
+    justify-content:space-between;
+    padding:9px 0;
+    border-bottom:1px dashed var(--line);
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+  }
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row .k{color:var(--muted);}
+  .spec-row .v{font-weight:600;text-align:right;color:var(--night);}
+
+  .spec-foot{
+    padding:16px 18px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .price-note{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    font-weight:500;
+    color:var(--muted);
+  }
+  .btn-amazon{
+    display:inline-block;
+    background:var(--sun-bg);
+    color:var(--night);
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    font-weight:600;
+    font-size:14px;
+    text-decoration:none;
+    padding:11px 20px;
+    border:1px solid var(--night);
+    transition:background .15s ease, transform .1s ease;
+  }
+  .btn-amazon:hover{background:var(--rust);color:var(--paper);transform:translateY(-1px);}
+  .btn-amazon:active{transform:translateY(0);}
+
+  /* ---- CALLOUT ---- */
+  .callout{
+    border-left:3px solid var(--solar);
+    background:#E4EEE9;
+    padding:14px 18px;
+    font-size:15px;
+    margin:24px 0;
+  }
+  .callout b{display:block;font-family:'JetBrains Mono', monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--solar);margin-bottom:4px;}
+
+  .callout.warn{border-left-color:var(--rust);background:#F2E2DC;}
+  .callout.warn b{color:var(--rust);}
+
+  /* ---- DISCLOSURE / FOOTER ---- */
+  .disclosure{
+    margin-top:56px;
+    padding:16px 18px;
+    background:#E7E0D2;
+    border:1px solid var(--line);
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--muted);
+    line-height:1.7;
+  }
+  footer{
+    text-align:center;
+    padding:28px 24px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:.06em;
+    color:var(--muted);
+    text-transform:uppercase;
+  }
+
+  @media (max-width:600px){
+    .spec-row{font-size:12px;}
+    h1{font-size:30px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="sun-ray"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Guide d'achat / Énergie nomade N°01</div>
+    <h1>Batterie solaire nomade : quelle autonomie pour votre camping-car ?</h1>
+    <p class="lede">Capacité, puissance de sortie, vitesse de recharge solaire : voici comment choisir une station électrique portable adaptée à un vrai usage en mobil-home, sans se tromper de gamme.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h2><span class="tag">01</span>Trois chiffres à comprendre avant tout</h2>
+  <p>Sur une fiche produit de batterie nomade, trois valeurs déterminent si le modèle correspond à votre usage réel : la <strong>capacité</strong> (en Wh, l'énergie totale stockée), la <strong>puissance de sortie</strong> (en W, ce qu'elle peut alimenter en simultané) et l'<strong>entrée solaire max</strong> (en W, la vitesse de recharge par panneau).</p>
+  <ul>
+    <li><strong>700 à 1000 Wh</strong> — le cœur du marché : fait tourner une glacière électrique 24 à 48h et de petits appareils.</li>
+    <li><strong>2000 Wh et plus</strong> — un vrai substitut au secteur, capable d'alimenter plaque à induction ou climatiseur portatif.</li>
+    <li><strong>Entrée solaire élevée (500W+)</strong> — recharge complète en une demi-journée de bon soleil plutôt qu'en deux jours.</li>
+  </ul>
+
+  <div class="callout">
+    <b>Repère rapide</b>
+    Pour un weekend ou une courte itinérance : viser 500-600 Wh suffit. Pour vivre en camping-car plusieurs jours sans branchement secteur, comptez plutôt 2000 Wh minimum.
+  </div>
+
+  <h2><span class="tag">02</span>Station portable ou batterie fixe ?</h2>
+  <p>Une station électrique portable n'est pas une simple version transportable d'une batterie lithium fixe câblée au véhicule — c'est une solution différente, sans installation ni électricien. Elle se transporte partout, y compris hors du camping-car, mais reste plus limitée en très grosse capacité que du fixe.</p>
+  <div class="callout warn">
+    <b>À savoir</b>
+    Les modèles de plus de 3000 Wh (Bluetti Elite 400 par exemple) pèsent souvent 35-40 kg avec roulettes — pensez à vérifier le poids si vous devez la déplacer souvent hors du véhicule.
+  </div>
+
+  <h2><span class="tag">03</span>Trois modèles selon votre usage</h2>
+  <p>Sélection à trois niveaux, du weekend léger à l'autonomie complète en mobil-home.</p>
+
+  <!-- ========================================================= -->
+  <!-- FICHES PRODUITS — remplace le lien Amazon par le tien      -->
+  <!-- Format : https://www.amazon.fr/dp/CODE-PRODUIT?tag=TON-ID  -->
+  <!-- Ton identifiant s'obtient via le programme Amazon Partenaires -->
+  <!-- ========================================================= -->
+
+  <div class="spec-card">
+    <div class="spec-head">
+      <span class="model">EcoFlow River 3 Max</span>
+      <span class="tier">Entrée de gamme · Weekend & itinérance courte</span>
+    </div>
+    <div class="spec-body">
+      <div class="spec-row"><span class="k">Capacité</span><span class="v">572 Wh</span></div>
+      <div class="spec-row"><span class="k">Puissance de sortie</span><span class="v">600 W</span></div>
+      <div class="spec-row"><span class="k">Poids</span><span class="v">~6 kg</span></div>
+      <div class="spec-row"><span class="k">Recharge</span><span class="v">Secteur, solaire, allume-cigare</span></div>
+      <div class="spec-row"><span class="k">Usage conseillé</span><span class="v">Glacière, téléphones, éclairage</span></div>
+    </div>
+    <div class="spec-foot">
+      <span class="price-note">≈ 350–450 € selon promotions</span>
+      <a class="btn-amazon" href="https://www.amazon.fr/s?k=EcoFlow+River+3+Max&tag=monblogoutill-21" target="_blank" rel="noopener sponsored">Voir sur Amazon →</a>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-head">
+      <span class="model">EcoFlow Delta 2 Max+</span>
+      <span class="tier">Milieu de gamme · Usage régulier van / camping-car</span>
+    </div>
+    <div class="spec-body">
+      <div class="spec-row"><span class="k">Capacité</span><span class="v">2 048 Wh</span></div>
+      <div class="spec-row"><span class="k">Puissance de sortie</span><span class="v">2 400 W (XBoost 3 100 W)</span></div>
+      <div class="spec-row"><span class="k">Entrée solaire</span><span class="v">jusqu'à 1 000 W</span></div>
+      <div class="spec-row"><span class="k">Poids</span><span class="v">~23 kg</span></div>
+      <div class="spec-row"><span class="k">Usage conseillé</span><span class="v">Glacière + petit électroménager</span></div>
+    </div>
+    <div class="spec-foot">
+      <span class="price-note">≈ 1 100–1 400 € selon kit panneau</span>
+      <a class="btn-amazon" href="https://www.amazon.fr/s?k=EcoFlow+Delta+2+Max+Plus&tag=monblogoutill-21" target="_blank" rel="noopener sponsored">Voir sur Amazon →</a>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-head">
+      <span class="model">Bluetti Elite 400</span>
+      <span class="tier">Haut de gamme · Autonomie complète mobil-home</span>
+    </div>
+    <div class="spec-body">
+      <div class="spec-row"><span class="k">Capacité</span><span class="v">3 840 Wh</span></div>
+      <div class="spec-row"><span class="k">Puissance de sortie</span><span class="v">2 600 W continu</span></div>
+      <div class="spec-row"><span class="k">Transport</span><span class="v">Roulettes + poignée télescopique</span></div>
+      <div class="spec-row"><span class="k">Poids</span><span class="v">~39 kg</span></div>
+      <div class="spec-row"><span class="k">Usage conseillé</span><span class="v">Plaque induction, clim portative</span></div>
+    </div>
+    <div class="spec-foot">
+      <span class="price-note">≈ 2 000–2 800 € selon promotions</span>
+      <a class="btn-amazon" href="https://www.amazon.fr/s?k=Bluetti+Elite+400&tag=monblogoutill-21" target="_blank" rel="noopener sponsored">Voir sur Amazon →</a>
+    </div>
+  </div>
+
+  <h2><span class="tag">04</span>Erreurs fréquentes</h2>
+  <ul>
+    <li>Se fier uniquement à la capacité (Wh) sans vérifier la puissance de sortie (W) — une grosse batterie avec une faible puissance ne fera pas tourner une plaque à induction.</li>
+    <li>Négliger l'entrée solaire max : une batterie à 200 W d'entrée solaire mettra deux jours à se recharger là où une autre fait ça en quelques heures.</li>
+    <li>Laisser la station branchée en continu sur la prise allume-cigare du véhicule à l'arrêt — ça peut décharger la batterie moteur.</li>
+  </ul>
+
+  <div class="disclosure">
+    Cet article contient des liens d'affiliation Amazon. En tant que Partenaire Amazon, Mon Blog Outillage réalise un revenu sur les achats remplissant les conditions requises, sans coût supplémentaire pour vous. Les prix indiqués sont donnés à titre indicatif et évoluent régulièrement — vérifiez toujours le tarif du jour sur Amazon.
+  </div>
+
+</div>
+
+<footer>Fiche rédigée pour un usage camping-car / mobil-home — vérifiez toujours la compatibilité avec votre installation</footer>
+
+</body>
+</html>
